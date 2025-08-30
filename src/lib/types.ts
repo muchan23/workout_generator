@@ -51,5 +51,17 @@ export const TARGET_MUSCLES = [
     '全身',
 ] as const;
 
+export const LEVELS = [
+    'beginner',
+    'intermediate',
+    'advanced',
+] as const;
+
+export const DURATION = [15, 30, 45, 60] as const;
+
 export const EQUIPMENT = [
-]
+    'なし',
+    'ダンベル',
+    'バーベル',
+    'マシン',
+] as const;
