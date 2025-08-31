@@ -19,7 +19,7 @@ export async function generateWorkoutMenu(preferences: UserPreferences): Promise
 }
 
 // 履歴ベース提案
-export async function generateHistoryBaseMenu(
+export async function generateHistoryBasedMenu(
     preferences: UserPreferences,
     history: WorkoutHistory[]
 ): Promise<WorkoutMenu> {
