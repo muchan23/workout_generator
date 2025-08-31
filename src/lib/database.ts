@@ -79,6 +79,5 @@ export const databaseUtils = {
     async clearDatabase(): Promise<void> {
         await db.workoutMenus.clear();
         await db.workoutHistory.clear();
-    }
-        
-}
+    }      
+};
