@@ -44,6 +44,29 @@ export default function PreferencesForm({ preferences, onPreferencesChange }: Pr
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
                 トレーニング設定
             </h2>
+
+            <form className="space-y-6">
+                <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-3">
+                        鍛えたい部位
+                    </label>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        {TARGET_MUSCLES.map((muscle) => (
+                            <label
+                                key={muscle}
+                                className={`flex items-center justify-center p-3 rounded-lg border-2 cursor-pointer transition-colors ${
+                                    preferences.targetMuscle === muscle
+                                    ? 'border-blue-500 bg-blue-50 text-blue-700'
+                                    : 'border-gray-200 hover:border-gray-300'
+                                }`}
+                            >
+                                <input
+                                />
+                            </label>
+                        ))}
+                    </div>
+                </div>
+            </form>
         </div>
     )
 }
